@@ -8,6 +8,7 @@ metadata:
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
     demo: demo
+    test: test
 spec:
   replicas: {{ .Values.replicaCount }}
   revisionHistoryLimit: 3
